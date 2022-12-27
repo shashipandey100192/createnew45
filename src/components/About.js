@@ -6,7 +6,7 @@ function Myabout()
     return( 
     <Fragment>
     <h1>welcome to react js</h1>
-        <h2>thisis second element {b}</h2>
+        <h2>thisis second elementppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp {b}</h2>
     </Fragment>
     )
 }
