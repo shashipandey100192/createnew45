@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Myabout from './components/About';
-import Abc from './components/Contract';
+import MycoreHomee from './coreUI/Home';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Myabout/>
-    <Abc />
+    <MycoreHomee />
   </React.StrictMode>
 );
 
