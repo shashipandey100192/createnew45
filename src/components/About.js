@@ -7,7 +7,7 @@ function Myabout()
     return( 
     <Fragment>
     <h1>welcome to reactfsfsfsfsfsfsfsfsfsfsfsfsfsf js</h1>
-        <h2>thisis second elementppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp {b}</h2>
+        <h2>Hello Sir, I modified this 😊 {b}</h2>
     </Fragment>
     )
 }
