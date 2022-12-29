@@ -83,9 +83,8 @@ li.active{
     }
 }
 
-@media only screen and (min-width >= 724px){
+@media only screen and (min-width: 724px){
     ul.nav{
         margin-left: 5rem;
-        background-color: red;
     }
 }
