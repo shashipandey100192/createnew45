@@ -26,9 +26,6 @@ function MycoreHomee()
                 <li>About</li>
             </ul>
         </nav>
-        <div className="box">
-            {/* {variable} */}
-        </div>
         </>
         
     )

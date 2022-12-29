@@ -9,6 +9,7 @@
 
 body{
     height: 100vh;
+    background-color: lightgray;
 }
 
 nav{
@@ -16,11 +17,13 @@ nav{
     display: flex;
     max-height: 48.92px;
     /* overflow: hidden; */
+    background-color: white;
 }
 
 /* logo etcs */
 .company{
     display: flex;
+    cursor: pointer;
 }
 
 .logo{
@@ -50,6 +53,7 @@ ul.nav{
     flex-wrap: nowrap;
     flex-direction: row;
     margin-left: 1rem;
+    background-color: white;
 }
 li{
     text-align: center;
@@ -64,11 +68,6 @@ li.active{
     color: white;
 }
 
-.box{
-    max-width:100%;
-    height:300px;
-    background-color:lightgray;
-}
 
 @media only screen and (max-width: 626px){
     nav{
