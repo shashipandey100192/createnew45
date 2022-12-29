@@ -1,38 +1,35 @@
 import React from "react";
 import './global.css';
 import About11 from '../components/About';
+import Float from "./Float";
 
 function MycoreHomee()
 {
-    const a =50;
-    const b = "this is string data type";
-    const c = <h1> this is jsx systex {a} </h1>;
-    const d = <About11 />;
+    const variable = "This is an exaple of JavaScript variable"
 
 
     return(
         <> 
-        <nav className="nav1">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
+        <nav>
+            <div className="company">
+                <div className="logo">
+                    <img src="/css3Logo.png" alt="Error" className="logo-img" />
+                </div>
+                <div className="company-name">
+                    <span>Company</span>
+                </div>
+            </div>
+            <ul className="nav">
+                <li className="active">Home</li>
+                <li>Services</li>
+                <li>Contacts</li>
+                <li>Documentation</li>
+                <li>About</li>
             </ul>
         </nav>
-        <div className="box"> 
-            <h1>welcome:{a}</h1>
-            <h1>{b}</h1>
-            {c}
-            {d}
-
+        <div className="box">
+            <Float/>
         </div>
-
-
-
         </>
         
     )

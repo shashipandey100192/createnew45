@@ -1,32 +1,76 @@
+
 *
 {
-    margin:0 auto;
+    margin:0;
     padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
-.nav1
-{
-width:100%;
-height:50px;
-background-color:orange;
+
+body{
+    height: 100vh;
 }
-.nav1 ul
-{
+
+nav{
+    max-width: 100%;
+    display: flex;
+}
+
+/* logo etcs */
+.company{
+    display: flex;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    /* border: 1px solid; */
+    overflow: hidden;
+    border-radius: 100%;
+}
+.logo-img{
+    width: 100%;
+    scale: 1.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: invert();
+}
+.company-name{
+    display: grid;
+    place-content: center;
+}
+
+ul.nav{
     list-style-type: none;
     display: flex;
-    height: 50px;
+    /* max-width: 100%; */
+    /* flex-wrap: wrap; */
+    margin-left: 1rem;
 }
-.nav1 li{
-    flex:1;
-    line-height: 50px;
+li{
+    /* flex: 1; */
+    text-align: center;
+    padding: .8rem;
+    cursor: pointer;
 }
-.nav1 a
-{
-    width: 100%;
-    float:left;
+li:hover{
+    background-color: orange;
 }
 
 .box{
-    width:100%;
-    height:500px;
+    max-width:100%;
+    height:300px;
     background-color:lightgray;
+}
+
+@media only screen and (max-width: 510px){
+    nav ul{
+        display: block;
+        text-align: left;
+    }
+    nav ul li{
+        text-align: left;
+    }
 }
