@@ -1,7 +1,6 @@
 import React from "react";
 import './global.css';
 import About11 from '../components/About';
-import Float from "./Float";
 
 function MycoreHomee()
 {
@@ -28,7 +27,7 @@ function MycoreHomee()
             </ul>
         </nav>
         <div className="box">
-            <Float/>
+            {/* {variable} */}
         </div>
         </>
         
