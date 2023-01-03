@@ -1,3 +1,3 @@
 # Readme by me :)
 
-## Git Lectures are going on 😉
+## React Lectures are going on.
