@@ -1,11 +1,8 @@
 import React from "react";
 import './global.css';
-import About11 from '../components/About';
 
 function MycoreHomee()
 {
-    const variable = "This is an exaple of JavaScript variable"
-
 
     return(
         <> 
