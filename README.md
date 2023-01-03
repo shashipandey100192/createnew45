@@ -1,3 +1,3 @@
-# Readme by me :)
+# Readme
 
 ## React Lectures are going on.
