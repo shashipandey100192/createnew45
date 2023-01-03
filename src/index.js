@@ -1,19 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import MycoreHomee from './coreUI/Home';
-import Bootstraphome from './bootstrapUI/Bootstraphome';
-import Reactbootstraphome from './reactbootstrapUI/Reactbootstraphome';
-import Metrialhome from './metrialUI/metrialhome';
+import Home from './pages/Home';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import Loginpage from './pages/Loginpage';
+import Dashboard from './pages/Dashboard';
+
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MycoreHomee />
-    <Bootstraphome />
-    <Reactbootstraphome />
-    <Metrialhome />
+    <BrowserRouter>
+      <Routes>
+        <Route path='' element={<Loginpage />}/>
+        <Route path='dashboard' element={<Dashboard/>}/>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

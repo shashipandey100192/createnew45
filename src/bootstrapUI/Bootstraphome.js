@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 
 function Bootstraphome() {
+  const b="red";
   return (
     <div>
 <nav className="navbar navbar-expand-lg bg-light">
@@ -41,6 +42,8 @@ function Bootstraphome() {
     </div>
   </div>
 </nav>
+
+<h1 style={{'font-size':100,backgroundColor:b,border:`1px solid ${b}`,padding:10}}>welcome to stylesheet</h1>
 
 
 
