@@ -55,19 +55,23 @@ ul.nav{
     margin-left: 1rem;
     background-color: white;
 }
-li{
+nav li{
     text-align: center;
     padding: .8rem;
     cursor: pointer;
 }
-li:hover{
+nav li:hover{
     background-color: orange;
 }
-li.active{
+nav li.active{
     background-color: rgba(0, 0, 0, 0.784);
     color: white;
 }
 
+.link{
+    color: green;
+    
+}
 
 @media only screen and (max-width: 626px){
     nav{
@@ -83,16 +87,14 @@ li.active{
     }
 }
 
-@media only screen and (min-width >= 724px){
+@media only screen and (min-width: 724px){
     ul.nav{
-        margin-left: 5rem;
-        background-color: red;
+        margin-left: 7rem;
     }
 }
 
 .abc
 {
-    width:500px;
     height:500px;
     background-color:gray;
     color:white;

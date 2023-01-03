@@ -1,14 +1,13 @@
 import React, { Fragment } from "react";
-
+import '../coreUI/global.css'
 
 function Myabout()
 {
     const b = 6000
     return( 
     <Fragment>
-    <h1>welcome to reactfsfsfsfsfsfsfsfsfsfsfsfsfsf js</h1>
-        <h2>Hello Sir, I modified this 😊 {b}</h2>
-        <h1>Bahut badhiya &#128079;&#128079;&#128079;</h1>
+    <h1>welcome to <span className="link"> React.js </span> Library</h1>
+        <h2>This is a heading element</h2>
     </Fragment>
     )
 }
