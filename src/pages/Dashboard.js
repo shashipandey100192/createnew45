@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { About, Mychild } from './Childcompo';
 import Home from './Home'
 
 function Dashboard() {
@@ -32,6 +33,9 @@ const a=10;
       <input type="text" onClick={myinput} />
     <p>screenX: {statev}</p>
     <p>{z}</p>
+  <Mychild />
+  <About />
+
     </div>
   )
 }

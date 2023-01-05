@@ -41,4 +41,16 @@ ul li{
     background-color:rgb(232, 232, 232);
     line-height: 50px;
     border-bottom: 1px solid black;
+    
+}
+
+.heading
+{
+    font-size:50px;
+    animation:myani 1s infinite linear alternate;
+}
+@keyframes myani
+{
+    from{}
+    to{transform:translate(500px,0px)}
 }
