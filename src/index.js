@@ -17,7 +17,10 @@ root.render(
       <Routes>
         <Route path='' element={<Loginpage />}/>
         {/* <Route path='dashboard' element={<Dashboard/>}/> */}
-        <Route path='dashboard' element={<Mydatalist/>}/>
+        <Route path='dashboard' element={<Mydatalist/>}>
+          <Route path='home' element={<Home/>}/>
+          <Route path='about' element={<About/>}/>
+        </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
