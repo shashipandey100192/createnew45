@@ -1,5 +1,5 @@
-main{
-    height: 60vh;
+form{
+    height: 70vh;
     display: grid;
     place-content: center;
     background-color: lightblue;
