@@ -1,45 +1,33 @@
-
-*
-{
-    margin:0;
-    padding:0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+*{
+    font-family: 'Poppins';
 }
-
-body{
-    height: 100vh;
-    background-color: lightgray;
-}
-
 nav{
     max-width: 100%;
     display: flex;
     max-height: 48.92px;
-    /* overflow: hidden; */
-    background-color: white;
+    overflow: hidden;
+    background-color: #182C61;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0px;
+    left: 0px;
 }
 
 /* logo etcs */
 .company{
-    display: flex;
     cursor: pointer;
 }
 
 .logo{
-    height: 40px;
-    width: 40px;
+    height: 100%;
+    width: 110px;
     position: relative;
-    /* border: 1px solid; */
     overflow: hidden;
-    border-radius: 100%;
+    padding: 10px;
 }
 .logo-img{
     width: 100%;
-    scale: 1.4;
-    position: absolute;
-    top: 0;
-    left: 0;
     filter: invert();
 }
 .company-name{
@@ -53,15 +41,15 @@ ul.nav{
     flex-wrap: nowrap;
     flex-direction: row;
     margin-left: 1rem;
-    background-color: white;
 }
 nav li{
     text-align: center;
     padding: .8rem;
     cursor: pointer;
+    color: white;
 }
 nav li:hover{
-    background-color: orange;
+    background-color: #3B3B98;
 }
 nav li.active{
     background-color: rgba(0, 0, 0, 0.784);
@@ -73,7 +61,10 @@ nav li.active{
     
 }
 
-@media only screen and (max-width: 626px){
+@media only screen and (max-width: 499px){
+    .company{
+        height: 50px;
+    }
     nav{
         display: block;
         height: auto;
@@ -93,10 +84,3 @@ nav li.active{
     }
 }
 
-.abc
-{
-    height:500px;
-    background-color:gray;
-    color:white;
-    font-size:50px;
-}
