@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+*{
+    font-family: 'Poppins';
+}
+nav{
+    max-width: 100%;
+    display: flex;
+    max-height: 48.92px;
+    overflow: hidden;
+    background-color: #182C61;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+/* logo etcs */
+.company{
+    cursor: pointer;
+}
+
+.logo{
+    height: 100%;
+    width: 110px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+.logo-img{
+    width: 100%;
+    filter: invert();
+}
+.company-name{
+    display: grid;
+    place-content: center;
+}
+
+ul.nav{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+nav li{
+    text-align: center;
+    padding: .8rem;
+    cursor: pointer;
+    color: white;
+}
+nav li:hover{
+    background-color: #3B3B98;
+}
+nav li.active{
+    background-color: rgba(0, 0, 0, 0.784);
+    color: white;
+}
+
+.link{
+    color: green;
+    
+}
+
+@media only screen and (max-width: 499px){
+    .company{
+        height: 50px;
+    }
+    nav{
+        display: block;
+        height: auto;
+    }
+    ul.nav{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    nav ul li{
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 724px){
+    ul.nav{
+        margin-left: 7rem;
+    }
+}
+
