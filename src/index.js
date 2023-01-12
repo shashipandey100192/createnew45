@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Home from './pages/Home';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import Loginpage from './pages/Loginpage';
-import Dashboard from './pages/Dashboard';
-import { About } from './pages/Childcompo';
-import Mydatalist from './pages/Mydatalist';
+import Mynav from './components/Mynav';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Home from './components/Home';
+import BootstrapUI from './components/BootstrapUI';
+import About from './components/About';
+
 
 
 
@@ -13,14 +13,14 @@ import Mydatalist from './pages/Mydatalist';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
+    
     <BrowserRouter>
+      <Mynav/>
       <Routes>
-        <Route path='' element={<Loginpage />}/>
-        {/* <Route path='dashboard' element={<Dashboard/>}/> */}
-        <Route path='dashboard' element={<Mydatalist/>}>
-          <Route path='home' element={<Home/>}/>
-          <Route path='about' element={<About/>}/>
-        </Route>
+       <Route path='' element={<Home/>}/>
+       <Route path='bootstrapui' element={<BootstrapUI />}/>
+       <Route path='about' element={<About/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

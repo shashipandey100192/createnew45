@@ -1,16 +1,70 @@
-import React, { Fragment } from "react";
-import '../coreUI/global.css'
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Myabout()
-{
-    const b = 6000
-    return( 
-    <Fragment>
-    <h1>welcome to <span className="link"> React.js </span> Library</h1>
-        <h2>This is a heading element</h2>
-    </Fragment>
-    )
+function About() {
+  return (
+    <div className="flex-shrink-0 p-3 bg-white" style={{width:'280px'}}>
+    <a href="/" className="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+
+      <span className="fs-5 fw-semibold">Collapsible</span>
+    </a>
+    <ul className="list-unstyled ps-0">
+      <li className="mb-1">
+        <button className="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+          Home
+        </button>
+        <div className="collapse show" id="home-collapse">
+          <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li>
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">Updates</a></li>
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li>
+          </ul>
+        </div>
+      </li>
+      <li className="mb-1">
+        <button className="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Dashboard
+        </button>
+        <div className="collapse" id="dashboard-collapse">
+          <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li>
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">Weekly</a></li>
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">Monthly</a></li>
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">Annually</a></li>
+          </ul>
+        </div>
+      </li>
+      <li className="mb-1">
+        <button className="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          Orders
+        </button>
+        <div className="collapse" id="orders-collapse">
+          <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">New</a></li>
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">Processed</a></li>
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">Shipped</a></li>
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">Returned</a></li>
+          </ul>
+        </div>
+      </li>
+      <li className="border-top my-3"></li>
+      <li className="mb-1">
+        <button className="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          Account
+        </button>
+        <div className="collapse" id="account-collapse">
+          <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">New...</a></li>
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">Profile</a></li>
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">Settings</a></li>
+            <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded">Sign out</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    {/* <p>https://www.primefaces.org/apollo-react/apps/tasklist/</p> */}
+  </div>
+  )
 }
 
-export default Myabout
-
+export default About
